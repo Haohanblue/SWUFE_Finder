@@ -21,18 +21,18 @@ export default {
 			pageName: 'FrameworkSocketSocketServer',
 			params: {}
 		},    
-		// 'menu_103' : {
-		// 	icon: 'profile',
-		// 	title: 'json数据库',
-		// 	pageName: 'FrameworkJsonDBIndex',
-		// 	params: {}
-		// },
-		// 'menu_104' : {
-		// 	icon: 'profile',
-		// 	title: 'sqlite数据库',
-		// 	pageName: 'FrameworkSqliteDBIndex',
-		// 	params: {}
-		// },
+		'menu_103' : {
+			icon: 'profile',
+			title: 'json数据库',
+			pageName: 'FrameworkJsonDBIndex',
+			params: {}
+		},
+		'menu_104' : {
+			icon: 'profile',
+			title: 'sqlite数据库',
+			pageName: 'FrameworkSqliteDBIndex',
+			params: {}
+		},
 		'menu_106' : {
 			icon: 'profile',
 			title: '自动更新',
@@ -50,7 +50,12 @@ export default {
 			title: '测试',
 			pageName: 'FrameworkTestApiIndex',
 			params: {}
-		},                                             
+		},
+		'menu_109' : {
+			icon: 'profile',
+			title: '自动请求',
+			pageName: 'AutoRequest',
+			params: {}                                           
 	},	
   os: {
 		'menu_100' : {
@@ -124,4 +129,5 @@ export default {
       params: {}
     }                                                
   } 	
+}
 }

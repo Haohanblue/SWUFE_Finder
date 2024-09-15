@@ -17,6 +17,7 @@ const constantRouterMap = [
         redirect: { name: 'FrameworkSocketIpc' },
         children: [
           {
+            
             path: '/framework/socket/ipc',
             name: 'FrameworkSocketIpc',
             component: () => import('@/views/framework/socket/Ipc.vue')
@@ -31,16 +32,16 @@ const constantRouterMap = [
             name: 'FrameworkSocketSocketServer',
             component: () => import('@/views/framework/socket/SocketServer.vue')
           }, 
-          // {
-          //   path: '/framework/jsondb/index',
-          //   name: 'FrameworkJsonDBIndex',
-          //   component: () => import('@/views/framework/jsondb/Index.vue')
-          // },
-          // {
-          //   path: '/framework/sqlitedb/index',
-          //   name: 'FrameworkSqliteDBIndex',
-          //   component: () => import('@/views/framework/sqlitedb/Index.vue')
-          // },
+          {
+            path: '/framework/jsondb/index',
+            name: 'FrameworkJsonDBIndex',
+            component: () => import('@/views/framework/jsondb/Index.vue')
+          },
+          {
+            path: '/framework/sqlitedb/index',
+            name: 'FrameworkSqliteDBIndex',
+            component: () => import('@/views/framework/sqlitedb/Index.vue')
+          },
           {
             path: '/framework/updater/index',
             name: 'FrameworkUpdaterIndex',
@@ -55,6 +56,11 @@ const constantRouterMap = [
             path: '/framework/testapi/index',
             name: 'FrameworkTestApiIndex',
             component: () => import('@/views/framework/testapi/Index.vue')
+          },
+          {
+            path: '/framework/autorequest/index',
+            name: 'AutoRequest',
+            component: () => import('@/views/framework/autorequest/Index.vue')
           },
         ]  
       },
